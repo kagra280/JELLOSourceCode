@@ -1,0 +1,21 @@
+<aiml version="1.0.1" encoding="UTF-8">
+  <category>
+    <pattern> KONNICHIWA </pattern>
+    <template> KONNICHIWA! HELLO, MY NAME IS JELLO. FOLLOW ME, AND I'LL TEACH YOU HOW TO SAY FRUITS AND VEGETABLES IN JAPANESE </template>
+  </category>
+
+  <category>
+    <pattern> USER CORRECT * </pattern>
+    <template> CORRECT! <star index="1"/> </template>
+  </category>
+
+  <category>
+    <pattern> USER INCORRECT * </pattern>
+    <template> TRY AGAIN! IT'S PRONOUNCED <star index="1"/> </template>
+  </category>
+
+  <category>
+    <pattern> REPEAT * </pattern>
+    <template> <star index="1"/> </template>
+  </category>
+</aiml>

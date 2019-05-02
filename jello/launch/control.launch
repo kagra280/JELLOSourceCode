@@ -1,0 +1,18 @@
+<launch>
+    <!--
+    <node name="controls" pkg="jello" type="controls.py" output="screen"/>
+    <node name="bridge" pkg="jello" type="bridge.py" output="screen"/>
+    <node name="screenEmotes" pkg="jello" type="screenEmotes.py" output="screen"/>
+    <node name="screenInfo" pkg="jello" type="screenInfo.py" output="screen"/>
+    <node name="display" pkg="jello" type="display.py" output="screen"/>
+    -->
+
+    <!-- Speech Nodes -->
+    <param name="aiml_path" value="/home/turtlebot/catkin_ws/src/jello/resources"/>
+    <node name="aiml_interpreter" pkg="jello" type="aimlInterpreter.py" output="screen"/>
+
+    <include file="$(find sound_play)/soundplay_node.launch"> </include>
+    <node name="tts" pkg="jello" type="tts.py" output="screen"/>
+
+    <node name="speech_recognition" pkg="jello" type="speechRecognition.py" output="screen"/>
+</launch>
