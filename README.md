@@ -7,13 +7,13 @@ JELLO (Japanese-English Language Learner - Oto)
 JELLO is a semi-autonomous robot that teaches users basic Japanese.
 
 Packages needed for JELLO:
-- PY AIML
-- PocketSphinx
-- Audio_common
+- PY AIML (Text to speech)
+- PocketSphinx (Speech recognition)
+- Audio_common 
 - Executive_smach
 - Scitos Metralabs
-- Uashh_smach
-- Object Recognition (via Melodic computer)
+- Uashh_smach (State machines)
+- find_object_2d (Object recognition)
 
 To start JELLO:
 ssh into laptop with ROS kinetic and packages above installed and initialized (excluding object recognition)
